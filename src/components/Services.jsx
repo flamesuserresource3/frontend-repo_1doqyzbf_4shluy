@@ -33,7 +33,7 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-3xl font-bold text-white sm:text-4xl"
+          className="text-3xl font-bold text-slate-900 sm:text-4xl"
         >
           What we craft
         </motion.h2>
@@ -42,7 +42,7 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="mt-3 text-base text-white/70 sm:text-lg"
+          className="mt-3 text-base text-slate-600 sm:text-lg"
         >
           End‑to‑end product development — from vision and design to deployment and iteration.
         </motion.p>
@@ -56,15 +56,15 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: idx * 0.05 }}
-            className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/5 to-white/[0.03] p-6 text-white shadow-lg"
+            className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 text-slate-900 shadow-sm"
           >
-            <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-tr from-cyan-500/20 to-fuchsia-500/20 blur-2xl transition-transform duration-300 group-hover:scale-125" />
-            <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500/20 to-fuchsia-500/20 text-cyan-300 ring-1 ring-white/10">
+            <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-blue-100 blur-2xl transition-transform duration-300 group-hover:scale-125" />
+            <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600 ring-1 ring-blue-200">
               <Icon className="h-6 w-6" />
             </div>
             <h3 className="mt-4 text-lg font-semibold">{title}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-white/70">{desc}</p>
-            <div className="mt-4 text-sm font-medium text-cyan-300/90">Learn more →</div>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">{desc}</p>
+            <div className="mt-4 text-sm font-medium text-blue-600">Learn more →</div>
           </motion.div>
         ))}
       </div>
